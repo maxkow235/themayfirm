@@ -1,0 +1,543 @@
+$lgreen: #8eca00;
+$thinborder: 1px solid rgba(255, 255, 255, 0.3);
+$mons: 'Montserrat', sans-serif;
+$play: 'Playfair Display', serif;
+$gblack: #161d29;
+$osw: "Oswald", sans-serif;
+
+h2 {
+	font-size: 60px;
+	font-family: $osw;
+	color: rgb(51, 51, 51);
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 1.167;
+	text-align: center;
+}
+
+.page-header {
+	min-height: 600px;
+	padding-bottom: 250px;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/scolarships.jpg') no-repeat center center/cover;
+
+	.text-headers {
+		margin-top: 13%;
+
+		h1 {
+			color: white;
+			font-size: 70px;
+		}
+
+		p {
+			font-size: 20px;
+		}
+
+	}
+
+}
+
+.main {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	font-size: 20px;
+	font-family: $mons;
+	color: rgb(102, 102, 102);
+
+	img {
+		width: 100%;
+	}
+
+	p {
+		line-height: 1.8;
+		text-align: left;
+		font-weight: 300;
+
+		b {
+			color: $lgreen;
+		}
+
+	}
+
+	q {
+		border-left: 3px solid $lgreen;
+		padding-left: 20px;
+		display: block;
+		font-size: 21px;
+		font-size: 21px;
+		font-family: $play;
+		color: rgb(51, 51, 51);
+		font-weight: 700;
+		font-style: italic;
+		line-height: 1.714;
+		text-align: left;
+	}
+
+}
+
+.bg-primary, .bg-warning {
+	min-height: 600px;
+}
+
+.cr-pd {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+section.amount {
+	position: relative;
+	bottom: -80px;
+	z-index: 1000;
+}
+
+.amount-card {
+	background-color: #1a222f;
+	min-height: 600px;
+	display: flex;
+	justify-content: space-evenly;
+	flex-flow: column nowrap;
+	align-items: center;
+	padding: 80px;
+
+	h2 {
+		font-size: 36px;
+		font-family: $osw;
+		color: rgb(255, 255, 255);
+		font-weight: 700;
+		text-transform: uppercase;
+
+		span {
+			color: $lgreen;
+		}
+
+	}
+
+	.sum {
+		font-size: 180px;
+		font-family: $osw;
+		color: rgb(142, 202, 0);
+		font-weight: 700;
+	}
+
+	p {
+		font-size: 15px;
+		text-align: center;
+		font-family: $mons;
+		color: rgb(255, 255, 255);
+		font-weight: 300;
+	}
+
+	img {
+		align-self: center;
+	}
+
+}
+
+.criteria {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	color: white;
+	min-height: 600px;
+	background-color: #161d29;
+	background-image: url('../img/dot-gray.png');
+
+	p {
+		font-size: 16px;
+		margin: 0;
+		padding: 65px;
+		font-family: $mons;
+		color: rgb(255, 255, 255);
+		line-height: 2;
+		font-weight: 300;
+		text-align: center;
+
+		a {
+			color: $lgreen;
+			text-decoration: none;
+			font-weight: bold;
+		}
+
+		b {
+			color: white;
+		}
+
+	}
+
+}
+
+.student {
+	background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(../img/student.jpg) no-repeat center bottom/cover;
+	z-index: -120;
+	position: relative;
+	min-height: 900px;
+
+	.caption {
+		background-color: $gblack;
+		text-align: center;
+		padding: 40px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		max-width: 600px;
+		font-size: 18px;
+		font-family: $mons;
+		font-weight: 300;
+		color: rgb(255, 255, 255);
+		line-height: 1.889;
+		margin: 0 auto;
+		color: white;
+
+		span {
+			font-weight: bold;
+			color: $lgreen;
+		}
+
+		b {
+			color: white;
+		}
+
+	}
+
+}
+
+section.contact-form {
+	padding-top: 110px;
+	padding-bottom: 110px;
+	background-color: #f1f1f1;
+
+	form {
+		img {
+			width: 300px;
+		}
+
+		input[type="submit"] {
+			border: 0;
+			border-radius: 0;
+			width: 100%;
+			height: 100%;
+			padding: 20px;
+			background-color: $lgreen;
+			font-size: 18px;
+			font-family: $mons;
+			color: rgb(255, 255, 255);
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+
+		.placeholder-wrap {
+			background-color: #fff;
+			position: relative;
+		}
+
+		.placeholder-wrap .placeholder {
+			position: absolute;
+			top: 50%;
+			left: 20px;
+			color: #686868;
+			margin-top: -.5em;
+			line-height: 1em;
+			z-index: 9;
+			overflow: hidden;
+			white-space: nowrap;
+			width: 90%;
+		}
+
+		.placeholder-wrap input.form-control, input.form-control {
+			margin: 20px 0px;
+			padding: 20px;
+			border: 0;
+			border-radius: 0;
+			box-shadow: 0px 0px 17px -7px rgba(0, 0, 0, 0.55);
+			position: relative;
+			z-index: 10;
+			font-size: 14px;
+			font-family: $mons;
+			color: rgb(102, 102, 102);
+			font-weight: 700;
+			text-transform: uppercase;
+			text-align: left;
+
+			&:focus {
+				border: 0;
+				outline: 0;
+				outline: 2px solid $lgreen;
+			}
+
+			&[type=file] {
+				padding: 17px;
+			}
+
+		}
+
+		.placeholder {
+			font-size: 14px;
+			font-family: $mons;
+			color: rgb(102, 102, 102);
+			font-weight: 700;
+			text-transform: uppercase;
+			text-align: left;
+
+			span {
+				font-weight: 300;
+			}
+
+		}
+
+		.placeholder-wrap input {
+			background-color: transparent;
+		}
+
+	}
+
+}
+
+section.practice {
+	text-align: center;
+	background-color: #fafafa;
+	padding-top: 150px;
+	padding-bottom: 150px;
+
+	.header-sect {
+		padding: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+		background-color: #202938;
+		min-height: 500px;
+
+		h2 {
+			color: rgb(255, 255, 255);
+		}
+
+		p {
+			font-size: 18px;
+			font-family: $mons;
+			color: rgb(255, 255, 255);
+			line-height: 1.778;
+			font-weight: 300;
+		}
+
+	}
+
+	.card-sect {
+		
+		outline: 1px solid $lgreen;
+		outline-offset: -40px;
+		font-size: 16px;
+		font-family: $mons;
+		color: rgb(102, 102, 102);
+		box-shadow: 0px 0px 17px -7px rgba(0, 0, 0, 0.55);
+		height: 100%;
+		padding: 45px;
+		min-height: 400px;
+		
+		.cont-gr {
+			border: 1px solid $lgreen;
+			display: flex;
+			min-height: 320px;
+		align-items: center;
+		justify-content: center;
+		}
+
+		ul {
+			
+		
+			justify-content: center;
+			padding: 15px;
+			
+			height: 100%;
+			width: 80%;
+			margin: 0;
+			line-height: 2.2;
+			display: flex;
+			text-align: left;
+			flex-flow: row wrap;
+			align-items: flex-start;
+			align-content: center;
+			
+
+			li {
+				flex-basis:200px;
+			}
+		}
+
+	}
+
+}
+
+section.loc-small {
+	padding-top: 100px;
+	padding-bottom: 150px;
+	text-align: center;
+
+	.item {
+		display: flex;
+		flex-flow: column nowrap;
+		position: relative;
+		justify-content: center;
+		align-items: center;
+		width: 450px;
+		height: 190px;
+		margin-top: 40px;
+		background-color: #000;
+		color: white;
+		font-size: 24px;
+		text-align: center;
+		font-family: $osw;
+		color: rgb(255, 255, 255);
+		font-weight: 700;
+		text-transform: uppercase;
+		text-decoration: none;
+
+		&.san-luis {
+			background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),url('../img/san-luis-obispo-sm.jpg') no-repeat center center/cover;
+		}
+
+		&:before {
+			content:'';
+			display: block;
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			top: 0;
+			background-color: $lgreen;
+			opacity: 0;
+			transition: opacity 0.5s ease-in;
+			
+		}
+
+		h3 {
+			margin-top: 14px;
+		}
+		&:hover:before {
+			
+				opacity:0.7;
+					transition: opacity 0.5s ease-out;
+			
+		}
+	}
+
+	
+
+}
+
+@media (max-width:1000px) {
+	section.loc-small {
+		.item {
+			flex-grow: 1;
+		}
+
+	}
+
+}
+
+@media (max-width:700px) {
+	header.page-header {
+		min-height: 550px;
+		padding-bottom: 0px;
+		position: relative;
+		background: none;
+		background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(../img/scolarships.jpg) no-repeat center center/cover;
+
+		.text-headers {
+			position: static;
+			margin-top: 200px;
+		}
+
+	}
+
+	.student {
+		background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(../img/student.jpg) no-repeat top center/100%;
+		z-index: -120;
+		position: relative;
+		min-height: 650px;
+	}
+
+	h2 {
+		font-size: 36px;
+	}
+
+	p {
+		font-size: 14px;
+	}
+
+	.main q {
+		font-size: 16px;
+	}
+
+	.main {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.amount-card {
+		padding: 20px;
+
+		.sum {
+			font-size: 60px;
+		}
+
+		h2 {
+			font-size: 36px;
+		}
+
+	}
+
+	section.practice, section.contact-form {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	section.practice .card-sect {
+		min-height: 300px;
+
+		ul {
+			top: 13px;
+			left: 13px;
+			right: 13px;
+			bottom: 13px;
+			font-size: 13px;
+		}
+
+	}
+
+	section.practice .header-sect {
+		min-height: 300px;
+		padding: 40px;
+
+		h2 {
+			font-size: 36px;
+		}
+
+		p {
+			font-size: 14px;
+		}
+
+	}
+
+}
+
+@media (max-width:1200px) {
+	header.page-header {
+		h1 {
+			margin-top: 15%;
+		}
+
+	}
+
+	.cr-pd {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.criteria {
+		min-height: 150px;
+	}
+
+}

@@ -1,0 +1,381 @@
+$lgreen: #8eca00;
+$thinborder: 1px solid rgba(255, 255, 255, 0.3);
+$mons: 'Montserrat', sans-serif;
+$play: 'Playfair Display', serif;
+$gblack: #161d29;
+$osw: "Oswald", sans-serif;
+
+.page-header .text-headers .btn.btn-default {
+	padding: 25px 60px;
+	letter-spacing: 0.2em;
+	&:after {
+		display:none;
+	}
+}
+
+h2 {
+	font-size: 60px;
+	font-family: $osw;
+	color: rgb(51, 51, 51);
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-top: 90px;
+	
+}
+
+h2+p {
+	color: #7a7a7a;
+}
+
+.main .nav-list {
+	color: #222222;
+
+	a {
+		color: #222222;
+		transition: color 0.4s ease-out;
+
+		&:focus {
+			color: #222222;
+		}
+
+		&:hover {
+			color: $lgreen;
+		}
+
+	}
+
+}
+
+.activity .charities {
+	img {
+		align-self: center;
+		width: auto;
+		margin: 30px auto;
+	}
+}
+
+.main {
+	padding-top: 90px;
+	padding-bottom: 90px;
+}
+
+.pre-footer {
+	padding-bottom: 80px;
+}
+
+.page-header {
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/about.jpg') no-repeat center center/cover;
+}
+
+header.page-header .text-headers h1 {
+	color: white;
+}
+
+.main {
+	padding-top: 120px;
+	padding-bottom: 120px;
+
+	img {
+		width: 100%;
+		display: block;
+
+		&+p {
+			margin: 20px auto;
+			font-size: 16px;
+			font-family: $mons;
+			color: rgb(102, 102, 102);
+			line-height: 1.75;
+			text-align: left;
+		}
+
+	}
+
+	q {
+		font-size: 24px;
+		font-family: $play;
+		color: rgb(51, 51, 51);
+		font-weight: 700;
+		font-style: italic;
+		line-height: 1.833;
+		text-align: left;
+		border-left: 3px solid $lgreen;
+		padding-left: 20px;
+		display: block;
+	}
+
+	.text-section {
+		h2 {
+			border-left: 8px solid $lgreen;
+			padding-left: 14px;
+			font-family: $osw;
+			font-size: 60px;
+			font-weight: 700;
+			text-transform: uppercase;
+
+			&:before {
+				display: none;
+			}
+
+		}
+
+		p {
+			font-size: 16px;
+			font-family: $mons;
+			color: rgb(102, 102, 102);
+			line-height: 1.75;
+			text-align: left;
+			color: #666666;
+		}
+
+	}
+
+}
+
+.attorneys:not(.dropdown-menu) {
+	padding-top: 80px;
+	padding-bottom: 80px;
+
+	.item {
+		height: 485px;
+		background-repeat: no-repeat;
+		position: relative;
+
+		.overlay {
+			color: rgb(255, 255, 255);
+			background-color: rgba(0, 0, 0, 0.5);
+			position: absolute;
+			padding: 20px;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			text-align: center;
+			width: 100%;
+			height: 120px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			transition: height 0.4s ease-out;
+
+			h4 {
+				font-size: 30px;
+				font-family: $osw;
+				text-transform: uppercase;
+			}
+
+			p {
+				margin: 0;
+				color: rgb(255, 255, 255);
+				font-size: 18px;
+				font-family: $mons;
+				font-weight: 300;
+			}
+
+		}
+
+		&:hover {
+			.overlay {
+				height: 100%;
+			}
+
+		}
+
+		&.at1 {
+			background-image: url('../img/at1.jpg');
+		}
+
+		&.at2 {
+			background-image: url('../img/at2.jpg');
+		}
+
+		&.at3 {
+			background-image: url('../img/at3.jpg');
+		}
+
+		&.at4 {
+			background-image: url('../img/at4.jpg');
+		}
+
+		&.at1, &.at2, &.at3, &.at4 {
+			background-position: 50% 25%;
+			-webkit-background-size: cover;
+			background-size: cover;
+		}
+
+	}
+
+}
+
+.activity {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	
+	.bg-link {
+		display: block;
+		position: relative;
+		height: 235px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		
+  font-size: 30px;
+  font-family: $osw;
+  color: rgb( 255, 255, 255 );
+  text-transform: uppercase;
+  		margin-top: 30px;
+ 
+
+
+		.overlay {
+			transition: opacity 0.4s ease-out;
+			position: absolute;
+			top:0;right: 0; left: 0;
+			bottom: 0;
+			background-color: $lgreen;
+			opacity: 0;
+		}
+		
+		&:hover {
+			text-decoration: none;
+			.overlay {
+				opacity:0.4;
+			}
+		}
+
+		&.scolarship {
+			background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../img/scolar.jpg') no-repeat center center/cover;
+		}
+
+		&.sober {
+			background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../img/sober.jpg') no-repeat center center/cover;
+		}
+
+	}
+
+	img {
+		display: block;
+		width: 100%;
+	}
+
+	.side-text {
+		padding: 73px;
+		background-color: #202936;
+		color: rgb(255, 255, 255);
+		text-align: left;
+
+		h2 {
+			color: rgb(255, 255, 255);
+			text-align: left;
+			font-size: 48px;
+			font-family: $osw;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+
+		.gline {
+			background-color: $lgreen;
+			margin: 30px 0px;
+			width: 100px;
+			height: 2px;
+		}
+
+		p {
+			color: rgb(255, 255, 255);
+			font-size: 16px;
+			font-weight: 300;
+			font-family: $mons;
+			line-height: 1.75;
+		}
+
+	}
+
+	.quote {
+		border-left: 3px solid $lgreen;
+		padding-left: 16px;
+		margin-top: 35px;
+		margin-bottom: 35px;
+
+		q {
+			font-size: 24px;
+			font-family: $play;
+			color: rgb(51, 51, 51);
+			font-weight: 700;
+			font-style: italic;
+			line-height: 1.833;
+			text-align: left;
+			display: block;
+			margin-bottom: 15px;
+		}
+
+		span {
+			text-transform: uppercase;
+			font-size: 16px;
+			font-family: "Montserrat";
+			color: #333333;
+			text-align: left;
+
+			b {
+				color: $lgreen;
+			}
+
+		}
+
+	}
+
+}
+
+@media (max-width:700px) {
+	h2 {
+		font-size: 36px;
+	}
+	header.page-header .text-headers .buttons .btn-default {
+		padding: 25px 36px;
+	}
+	.activity {
+		.side-text {
+			padding: 23px;
+			background-color: #202936;
+			color: rgb(255, 255, 255);
+			text-align: left;
+
+			h2 {
+				font-size: 38px;
+			}
+
+			.gline {
+				background-color: $lgreen;
+				margin: 20px 0px;
+				width: 100px;
+				height: 2px;
+			}
+
+			p {
+				font-size: 13px;
+			}
+
+		}
+
+	}
+
+	.main {
+		padding-top: 30px;
+		.text-section {
+			h2 {
+				font-size: 36px;
+				margin-top: 0;
+				text-align: left;
+				border-left: 8px solid $lgreen;
+				padding-left: 10px;
+			}
+
+			p {
+				font-size: 13px;
+				font-family: $mons;
+			}
+
+		}
+
+	}
+
+}

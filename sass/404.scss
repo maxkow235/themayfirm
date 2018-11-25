@@ -1,0 +1,60 @@
+$lgreen: #8eca00;
+$thinborder: 1px solid rgba(255, 255, 255, 0.3);
+$mons: 'Montserrat', sans-serif;
+$play: 'Playfair Display', serif;
+$gblack: #161d29;
+$osw: "Oswald", sans-serif;
+
+
+.page-header .text-headers .btn.btn-default {
+	padding: 25px 60px;
+	letter-spacing: 0.2em;
+	&:after {
+		display:none;
+	}
+}
+
+.main .nav-list {
+	color: #222222;
+	a {
+		color: #222222;
+		transition: color 0.4s ease-out;
+		&:focus  {
+			color: #222222;
+		}
+
+		&:hover  {
+			color: $lgreen;
+		}
+	}
+
+}
+
+.main {
+	padding-top: 90px;
+	padding-bottom: 90px;
+}
+
+.pre-footer {
+	padding-bottom: 80px;
+}
+
+.page-header  {
+	background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('../img/404.jpg') no-repeat center center/cover;
+
+}
+
+header.page-header .text-headers h1 {
+	color: white;
+}
+
+@media (max-width:700px) {
+	
+	header.page-header .text-headers .buttons .btn-default {
+		padding: 25px 36px;
+	}
+	
+
+	
+
+}

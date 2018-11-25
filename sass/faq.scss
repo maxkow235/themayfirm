@@ -1,0 +1,276 @@
+$lgreen: #8eca00;
+$thinborder: 1px solid rgba(255, 255, 255, 0.3);
+$mons: 'Montserrat', sans-serif;
+$play: 'Playfair Display', serif;
+$gblack: #161d29;
+$osw: "Oswald", sans-serif;
+
+.page-header {
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/faqs.jpg') no-repeat center center/cover;
+}
+
+$lgreen: #8eca00;
+$thinborder: 1px solid rgba(255, 255, 255, 0.3);
+$mons: 'Montserrat', sans-serif;
+$play: 'Playfair Display', serif;
+$gblack: #161d29;
+$osw: "Oswald", sans-serif;
+
+.page-header .text-headers .btn.btn-default {
+	padding: 25px 60px;
+	letter-spacing: 0.2em;
+
+	&:after {
+		display: none;
+	}
+
+}
+
+.activity .charities {
+	img {
+		align-self: center;
+		width: auto;
+		margin: 30px auto;
+	}
+
+}
+
+.main {
+	padding-top: 90px;
+	padding-bottom: 90px;
+
+	.categories {
+		a {
+			background-color: #202938;
+			text-decoration: none;
+			margin: 10px;
+			transition: background-color 0.6s ease-out;
+			display: block;
+			font-size: 18px;
+			font-family: $mons;
+			color: rgb(255, 255, 255);
+			font-weight: 700;
+			text-transform: uppercase;
+			padding: 15px 24px;
+			line-height: 1;
+
+			&:hover {
+				background-color: $lgreen;
+			}
+
+			&.current {
+				background-color: $lgreen;
+			}
+
+		}
+
+	}
+
+	#accordion {
+		margin-bottom: 0;
+
+		.card-header {
+			height: auto;
+			justify-content: flex-start;
+
+			&:before {
+				content: url('../img/q-green.png');
+				margin-right: 20px;
+			}
+
+			&[aria-expanded="true"]:before {
+				content: url('../img/q-white.png');
+				margin-right: 20px;
+			}
+
+			&:after {
+				position: absolute;
+				right: 20px;
+				top: 30px;
+			}
+
+			h5 {
+				font-size: 16px;
+				font-family: $mons;
+				color: rgb(255, 255, 255);
+				font-weight: 700;
+				text-transform: none;
+				text-align: left;
+			}
+
+		}
+
+		.card-body {
+			background-color: #fff;
+
+			img {
+				float: left;
+				width: 50%;
+				margin: 10px;
+				text-align: left;
+			}
+
+			p {
+				font-size: 16px;
+				font-family: $mons;
+				color: rgb(102, 102, 102);
+				text-align: left;
+			}
+
+		}
+
+	}
+
+}
+
+.page-header {
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/faqs.jpg') no-repeat center center/cover;
+}
+
+header.page-header .text-headers h1 {
+	color: white;
+}
+
+.main {
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
+@media (max-width:700px) {
+	.main #accordion {
+		.card-body {
+			img {
+				float: none;
+				width: 100%;
+				margin: 0;
+				margin-bottom: 10px;
+			}
+
+		}
+
+	}
+
+	h2 {
+		font-size: 36px;
+	}
+
+	header.page-header .text-headers .buttons .btn-default {
+		padding: 25px 36px;
+	}
+
+	.main {
+		padding-top: 30px;
+		padding-bottom: 30px;
+
+		.text-section {
+			h2 {
+				font-size: 36px;
+				margin-top: 0;
+				text-align: left;
+				border-left: 8px solid $lgreen;
+				padding-left: 10px;
+			}
+
+			p {
+				font-size: 13px;
+				font-family: $mons;
+			}
+
+		}
+
+		.categories {
+			a {
+				font-size: 12px;
+			}
+
+		}
+
+		.video-container {
+			padding-top: 60px;
+			padding-bottom: 60px;
+
+			.video-cat {
+				padding-top: 65%;
+				width: 100%;
+				position: relative;
+				margin-bottom: 30px;
+				background-color: #000;
+
+				.thumb {
+					position: absolute;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					top: 0;
+					overflow: hidden;
+
+					img {
+						object-fit: cover;
+						opacity: 0.7;
+						display: block;
+						width: 120%;
+					}
+
+				}
+
+				.button-play {
+					.btn {
+						background: none;
+						width: 100px;
+						height: 100px;
+						transition: opacity 0.5s ease-out;
+
+						&:hover {
+							opacity: 0.4;
+						}
+
+						&:before {
+							content: url('../img/play-vd.png');
+							display: inline-block;
+							vertical-align: -80%;
+							margin-left: 5px;
+						}
+
+					}
+
+					.title {
+						max-height: 500px;
+						opacity: 1;
+
+						h4 {
+							font-size: 14px;
+							font-family: $mons;
+							color: rgb(255, 255, 255);
+							text-transform: uppercase;
+							text-align: center;
+							font-weight: 700;
+						}
+
+						p {
+							font-size: 12px;
+							font-family: $mons;
+							font-weight: 200;
+							color: rgb(255, 255, 255);
+							line-height: 1.75;
+							text-align: center;
+						}
+
+					}
+
+				}
+
+				&:hover {
+					.button-play .title {
+						transition: none;
+						opacity: 1;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}

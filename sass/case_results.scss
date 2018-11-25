@@ -1,0 +1,316 @@
+$lgreen: #8eca00;
+$thinborder: 1px solid rgba(255, 255, 255, 0.3);
+$mons: 'Montserrat', sans-serif;
+$play: 'Playfair Display', serif;
+$gblack: #161d29;
+$osw: "Oswald", sans-serif;
+
+h2 {
+	font-size: 60px;
+	font-family: $osw;
+	color: rgb(51, 51, 51);
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 1.167;
+	text-align: center;
+}
+
+.page-header {
+	min-height: 700px;
+	padding-bottom: 50px;
+	position: relative;
+
+	.text-headers {
+		margin: 0 auto;
+		position: absolute;
+		bottom: 10%;
+		left: 0;
+		right: 0;
+
+		h1 {
+			color: white;
+			font-size: 70px;
+		}
+
+		p {
+			font-size: 20px;
+		}
+
+	}
+
+	.bg-container {
+		position: absolute;
+		background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/case_results.jpg') no-repeat top center/cover;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		z-index: -100;
+	}
+
+}
+
+.main {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	font-size: 20px;
+	text-align: center;
+	font-family: $mons;
+	color: rgb(102, 102, 102);
+
+	h2+p {
+		font-size: 16px;
+		font-family: $mons;
+		color: rgb(102, 102, 102);
+		margin-bottom: 50px;
+	}
+
+	.case-card-lg {
+		margin-top: 40px;
+		box-shadow: 0px 0px 27px -7px rgba(0, 0, 0, 0.55);
+		outline: 1px solid $lgreen;
+		text-align: center;
+		outline-offset: -27px;
+		padding: 35px;
+
+		.abs-title {
+			background-color: #fff;
+			font-weight: 700;
+			color: $lgreen;
+			font-size: 18px;
+			font-family: $mons;
+			text-transform: uppercase;
+			position: absolute;
+			transform: translateX(-50%) translateY(-50%)  rotate(-90deg);
+			position: absolute;
+			top: 50%;
+			right: 50%;
+			left: -7px;
+			min-width: 220px;
+			max-width: 280px;
+			display: inline-block;
+		}
+
+		.sum {
+			font-size: 80px;
+			font-family: $osw;
+			font-weight: 700;
+			color: $lgreen;
+			text-transform: uppercase;
+		}
+
+		h5 {
+			font-size: 20px;
+			font-family: $mons;
+			color: rgb(153, 153, 153);
+			font-weight: 700;
+			text-transform: uppercase;
+			margin-top: .7em;
+		}
+
+		p {
+			font-size: 16px;
+			font-family: $mons;
+			color: rgb(51, 51, 51);
+			line-height: 1.875;
+			font-weight: 300;
+		}
+
+		.line-grey {
+			width: 140px;
+			height: 1px;
+			background-color: rgba(0, 0, 0, 0.4);
+			margin: 30px auto;
+		}
+
+		.content {
+			position: relative;
+			padding: 25px;
+			border: 1px solid $lgreen;
+		}
+
+	}
+
+	.case-card-sm {
+		margin-top: 40px;
+		box-shadow: 0px 0px 27px -7px rgba(0, 0, 0, 0.55);
+		padding: 55px;
+		height: 290px;
+		position: relative;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: column nowrap;
+		overflow: hidden;
+
+		.sum {
+			font-size: 60px;
+			font-family: $mons;
+			color: $lgreen;
+			font-weight: 700;
+		}
+
+		h5 {
+			font-size: 14px;
+			font-family: $mons;
+			color: rgb(51, 51, 51);
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+
+		.line-grey {
+			width: 80px;
+			height: 1px;
+			background-color: rgba(0, 0, 0, 0.7);
+			margin: 20px auto;
+		}
+
+		&:hover {
+			.overlay {
+				transform: translateY(0%);
+				transition: transform 0.2s ease-out;
+			}
+
+		}
+
+		.overlay {
+			display: flex;
+			position: absolute;
+			background-color: $gblack;
+			justify-content: center;
+			align-items: center;
+			flex-flow: column nowrap;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			padding: 50px;
+			transform: translateY(100%);
+			transition: transform 0.2s ease-in;
+
+			h5 {
+				font-size: 14px;
+				font-family: $mons;
+				color: $lgreen;
+				font-weight: 700;
+				text-transform: uppercase;
+			}
+
+			p {
+				font-size: 16px;
+				font-family: $mons;
+				color: rgb(255, 255, 255);
+				font-weight: 300;
+			}
+
+			.line-grey {
+				background-color: #fff;
+			}
+
+		}
+
+	}
+
+}
+
+@media (max-width:1200px) {
+	.page-header {
+		.bg-container {
+			top: 20%;
+			z-index: -100;
+		}
+
+	}
+
+	.main .bio-info {
+		margin-top: 20px;
+		padding: 10px;
+
+		img {
+			position: static;
+		}
+
+	}
+
+	.main h2 {
+		font-size: 36px;
+	}
+
+}
+
+@media (max-width:700px) {
+	.main .case-card-lg {
+		.sum {
+			font-size: 36px;
+		}
+
+		h5 {
+			font-size: 16px;
+		}
+
+		.line-grey {
+			margin: 10px auto;
+		}
+
+		p {
+			font-size: 12px;
+			line-height: unset;
+		}
+
+	}
+
+
+	.main .case-card-sm {
+		.sum {
+			font-size: 36px;
+		}
+
+		.overlay {
+			.line-grey {
+				color: #fff;
+				width: 80px;
+    height: 1px;
+    margin: 10px auto;
+    display: block;
+			}
+		}
+
+	}
+
+
+	header.page-header {
+		background: none;
+
+		.bg-container {
+			top: 20%;
+			z-index: -100;
+		}
+
+	}
+
+	.main h2 {
+		font-size: 36px;
+		padding-left: 0;
+		border-left: 0;
+	}
+
+	.main p {
+		font-size: 14px;
+	}
+
+	.main .quote {
+		q {
+			font-size: 18px;
+			line-height: 1.2;
+		}
+
+		span {
+			font-size: 13px;
+		}
+
+	}
+
+}

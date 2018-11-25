@@ -1,0 +1,290 @@
+$lgreen: #8eca00;
+$thinborder: 1px solid rgba(255, 255, 255, 0.3);
+$mons: 'Montserrat', sans-serif;
+$play: 'Playfair Display', serif;
+$gblack: #161d29;
+$osw: "Oswald", sans-serif;
+
+h2 {
+	font-size: 60px;
+	font-family: $osw;
+	color: rgb(51, 51, 51);
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 1.167;
+	text-align: center;
+}
+
+.page-header {
+	min-height: 700px;
+	padding-bottom: 50px;
+	position: relative;
+
+	.text-headers {
+		margin: 0 auto;
+		position: absolute;
+		bottom: 10%;
+		left: 0;
+		right: 0;
+
+		h1 {
+			color: white;
+			font-size: 70px;
+		}
+
+		p {
+			font-size: 20px;
+		}
+
+	}
+
+	.bg-container {
+		position: absolute;
+		background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/attorney_bio.jpg') no-repeat top center/cover;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		z-index: -100;
+	}
+
+}
+
+.main {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	font-size: 20px;
+	font-family: $mons;
+	color: rgb(102, 102, 102);
+
+	h2 {
+		border-left: 8px solid $lgreen;
+		padding-left: 30px;
+		font-size: 60px;
+		font-family: $osw;
+		font-weight: 400;
+		text-align: left;
+		margin-bottom: 30px;
+
+		b {
+			font-weight: 700;
+		}
+
+	}
+
+	img {
+		width: 100%;
+	}
+
+	p {
+		line-height: 1.8;
+		text-align: left;
+		font-size: 16px;
+		font-weight: 300;
+
+		b {
+			font-weight: 700;
+		}
+
+	}
+
+	.quote {
+		border-left: 3px solid $lgreen;
+		padding-left: 16px;
+		margin-top: 45px;
+		margin-bottom: 45px;
+
+		q {
+			font-size: 24px;
+			font-family: $play;
+			color: rgb(51, 51, 51);
+			font-weight: 700;
+			font-style: italic;
+			line-height: 1.833;
+			text-align: left;
+			display: block;
+			margin-bottom: 15px;
+		}
+
+		span {
+			text-transform: uppercase;
+			font-size: 16px;
+			font-family: "Montserrat";
+			color: #333333;
+			text-align: left;
+
+			b {
+				color: $lgreen;
+			}
+
+		}
+
+	}
+
+	.bg-grey-dots {
+		margin-top: 30px;
+		background-color: #f1f1f1;
+		position: relative;
+		z-index: 100;
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			 z-index: -1;
+			filter:  brightness(-100%);
+			background-image: url(../img/dot-gray.png);
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+
+	}
+
+	.bio-info {
+		padding: 30px;
+		margin-top: -100px;
+
+		img {
+			position: relative;
+			
+			left:-120px;
+		}
+
+		ul {
+			list-style-image: url('../img/bullet-gr.png');
+
+			li {
+				padding-left: 10px;
+			}
+
+		}
+
+		p, a, li {
+			font-size: 16px;
+			font-family: $mons;
+			color: rgb(78, 78, 78);
+			font-weight: 400;
+			line-height: 2.25;
+		}
+
+		i {
+			color: $lgreen;
+			display: inline-block;
+			font-size: 20px;
+			width: 20px;
+			height: 20px;
+			margin-right: 10px;
+		}
+
+		h3 {
+			font-size: 24px;
+			font-family: $osw;
+			margin: 20px auto;
+			color: rgb(51, 51, 51);
+			font-weight: 700;
+			text-transform: uppercase;
+			text-align: left;
+		}
+
+	}
+
+}
+
+.photo-grid {
+	.item {
+		height: 320px;
+		background-repeat: no-repeat;
+		-webkit-background-size: cover;
+		background-size: cover;
+		background-position: center center;
+	}
+
+	.pic1 {
+		background-image: url('../img/pic1.jpg');
+	}
+
+	.pic2 {
+		background-image: url('../img/pic2.jpg');
+	}
+
+	.pic3 {
+		background-image: url('../img/pic3.jpg');
+	}
+
+	.pic4 {
+		background-image: url('../img/pic4.jpg');
+	}
+
+	.pic5 {
+		background-image: url('../img/pic5.jpg');
+	}
+
+	.pic6 {
+		background-image: url('../img/pic6.jpg');
+	}
+
+}
+
+@media (max-width:1200px) {
+	.page-header {
+		.bg-container {
+			top: 20%;
+			z-index: -100;
+		}
+
+	}
+		
+	.main .bio-info {
+		margin-top: 20px;
+		padding: 10px;
+		img {
+			position: static;
+		}
+	}
+	.main h2 {
+		font-size: 36px;
+	}
+
+}
+
+@media (max-width:700px) {
+	header.page-header {
+		background: none;
+
+		.bg-container {
+			top: 20%;
+			z-index: -100;
+		}
+		
+	}
+
+	.main h2 {
+		font-size: 36px;
+		padding-left: 0;
+		border-left: 0;
+	}
+
+	.main p {
+		font-size: 14px;
+	}
+
+	.main .quote {
+		
+
+		q {
+			font-size: 18px;
+			
+			line-height: 1.2;
+			
+		}
+
+		span {
+			
+			font-size: 13px;
+			
+
+		}
+	}
+
+}

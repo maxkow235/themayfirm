@@ -1,0 +1,185 @@
+.page-header .text-headers .btn.btn-default {
+  padding: 25px 60px;
+  letter-spacing: 0.2em; }
+  .page-header .text-headers .btn.btn-default:after {
+    display: none; }
+
+.activity .charities img {
+  align-self: center;
+  width: auto;
+  margin: 30px auto; }
+
+.main {
+  padding-top: 90px;
+  padding-bottom: 90px; }
+  .main .categories a {
+    background-color: #202938;
+    text-decoration: none;
+    margin: 10px;
+    transition: background-color 0.6s ease-out;
+    display: block;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 15px 24px;
+    line-height: 1; }
+    .main .categories a:hover {
+      background-color: #8eca00; }
+    .main .categories a.current {
+      background-color: #8eca00; }
+  .main .video-container {
+    padding-top: 60px;
+    padding-bottom: 60px; }
+    .main .video-container .video-cat {
+      padding-top: 65%;
+      width: 100%;
+      position: relative;
+      margin-bottom: 30px;
+      background-color: #000; }
+      .main .video-container .video-cat .thumb {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        overflow: hidden; }
+        .main .video-container .video-cat .thumb img {
+          object-fit: cover;
+          opacity: 0.7;
+          display: block;
+          width: 120%; }
+      .main .video-container .video-cat .button-play {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-direction: column; }
+        .main .video-container .video-cat .button-play .btn {
+          background: url("../img/circles-vd.png") no-repeat center center;
+          width: 250px;
+          height: 250px;
+          transition: opacity 0.5s ease-out; }
+          .main .video-container .video-cat .button-play .btn:hover {
+            opacity: 0.4; }
+          .main .video-container .video-cat .button-play .btn:before {
+            content: url("../img/play-vd.png");
+            display: inline-block;
+            vertical-align: -80%;
+            margin-left: 5px; }
+        .main .video-container .video-cat .button-play .title {
+          max-height: 0;
+          opacity: 0;
+          transition: max-height 0.2s ease-out, opacity 0.2s ease-out;
+          transition: max-height 0.2s ease-out; }
+          .main .video-container .video-cat .button-play .title h4 {
+            font-size: 24px;
+            font-family: "Montserrat", sans-serif;
+            color: white;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 700; }
+          .main .video-container .video-cat .button-play .title p {
+            font-size: 16px;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 200;
+            color: white;
+            line-height: 1.75;
+            text-align: center; }
+      .main .video-container .video-cat:hover .button-play .title {
+        transition: max-height 0.2s ease-in, opacity 0.2s ease-in;
+        opacity: 1;
+        max-height: 500px; }
+
+.page-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/video-center.jpg") no-repeat center center/cover; }
+
+header.page-header .text-headers h1 {
+  color: white; }
+
+.main {
+  padding-top: 120px;
+  padding-bottom: 120px; }
+
+@media (max-width: 700px) {
+  h2 {
+    font-size: 36px; }
+
+  header.page-header .text-headers .buttons .btn-default {
+    padding: 25px 36px; }
+
+  .main {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+    .main .text-section h2 {
+      font-size: 36px;
+      margin-top: 0;
+      text-align: left;
+      border-left: 8px solid #8eca00;
+      padding-left: 10px; }
+    .main .text-section p {
+      font-size: 13px;
+      font-family: "Montserrat", sans-serif; }
+    .main .categories a {
+      font-size: 12px; }
+    .main .video-container {
+      padding-top: 60px;
+      padding-bottom: 60px; }
+      .main .video-container .video-cat {
+        padding-top: 65%;
+        width: 100%;
+        position: relative;
+        margin-bottom: 30px;
+        background-color: #000; }
+        .main .video-container .video-cat .thumb {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          top: 0;
+          overflow: hidden; }
+          .main .video-container .video-cat .thumb img {
+            object-fit: cover;
+            opacity: 0.7;
+            display: block;
+            width: 120%; }
+        .main .video-container .video-cat .button-play .btn {
+          background: none;
+          width: 100px;
+          height: 100px;
+          transition: opacity 0.5s ease-out; }
+          .main .video-container .video-cat .button-play .btn:hover {
+            opacity: 0.4; }
+          .main .video-container .video-cat .button-play .btn:before {
+            content: url("../img/play-vd.png");
+            display: inline-block;
+            vertical-align: -80%;
+            margin-left: 5px; }
+        .main .video-container .video-cat .button-play .title {
+          max-height: 500px;
+          opacity: 1; }
+          .main .video-container .video-cat .button-play .title h4 {
+            font-size: 14px;
+            font-family: "Montserrat", sans-serif;
+            color: white;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 700; }
+          .main .video-container .video-cat .button-play .title p {
+            font-size: 12px;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 200;
+            color: white;
+            line-height: 1.75;
+            text-align: center; }
+        .main .video-container .video-cat:hover .button-play .title {
+          transition: none;
+          opacity: 1; } }
+
+/*# sourceMappingURL=video_center.css.map */
